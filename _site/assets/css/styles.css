@@ -30,8 +30,9 @@ h3 {
   font-weight: normal; }
 
 p {
+  font-family: "Roboto";
   font-size: 14px;
-  font-family: 'Roboto Light'; }
+  font-weight: 300; }
 
 .row-container {
   display: flex;
@@ -139,7 +140,8 @@ nav {
   width: 600px;
   justify-content: space-between; }
   nav a {
-    font-family: "Roboto Light";
+    font-family: "Roboto";
+    font-weight: 300;
     color: #275cb2;
     text-decoration: none;
     padding-bottom: 3px; }

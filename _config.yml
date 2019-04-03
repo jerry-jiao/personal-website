@@ -1,5 +1,5 @@
 url: jerry-jiao.github.io
-baseurl: /jerry-jiao.github.io
+baseurl: /
 plugins:
   - jekyll-sitemap
   - jekyll-feed
