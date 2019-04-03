@@ -37,13 +37,8 @@ body {
 
 h1 { @include bigfont; }
 h2 { @include font('Muli', 25px, 400); }
-h3 {
-  @include font('Open Sans', 15px);
-}
-p {
-  font-size: 14px;
-  font-family: 'Roboto Light';
-}
+h3 { @include font('Open Sans', 15px); }
+p { @include font('Roboto', 14px, 300); }
 
 .row-container {
   display: flex;
