@@ -1,0 +1,16 @@
+<div class='nav-container'>
+  <div class="sub-header">
+
+    <div class="headshot" {% if page.showpic %} style="background-image: url('../assets/images/headshot.jpg');" {% endif %}>
+      <!-- <img src="assets/images/headshot.jpg" alt="headshot"> -->
+    </div>
+    <!-- <h1>Hey There!</h1> -->
+  </div>
+  <nav>
+    <!-- <a href='/' {% if page.url=='/' %} style='color: red;' {% endif %}>Home</a>
+    <a href='/about.html' {% if page.url=='/about.html' %} style='color: red;' {% endif %}>About</a> -->
+    {% for item in site.data.navigation %}
+      <a href='{{ item.link }}' {% if page.url == item.link %}class='current'{% endif %}>{{ item.name }}</a>
+    {% endfor %}
+  </nav>
+</div>

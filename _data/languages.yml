@@ -1,0 +1,15 @@
+- name: Java
+  class: java
+  color:
+
+- name: Python
+  class: python
+  color:
+
+- name: C++
+  class: cplusplus
+  color:
+
+- name: HTML/CSS
+  class: htmlcss
+  color:

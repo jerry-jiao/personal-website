@@ -1,0 +1,19 @@
+- name: CS61A
+  description: Structure and Interpretation of Computer Programs
+  small:
+
+- name: CS61B
+  description: Data Structures
+
+- name: EE16A
+  description: Designing Information Devices and Systems I
+
+- name: EE16B
+  description: Designing Information Devices and Systems II
+
+- name: Math 53
+  description: Multivariable Calculus
+
+- name: Introduction to HTML and CSS
+
+- name: AP Computer Science

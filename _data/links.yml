@@ -1,0 +1,11 @@
+- name: Github
+  image: assets/images/github-logo.svg
+  link: https://github.com/jerry-jiao
+
+- name: Facebook
+  image: assets/images/facebook-logo-official.svg
+  link: https://facebook.com
+
+- name: LinkedIn
+  image: assets/images/linkedin-logo.svg
+  link: https://www.linkedin.com/in/jerry-jiao/

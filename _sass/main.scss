@@ -1,0 +1,135 @@
+$color1: #275cb2;
+$color2: #2599ce;
+$font-main: 'Roboto Light';
+$font-secondary: 'Open Sans';
+
+@mixin font($family: 'Open Sans', $size: 15px, $weight: normal) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin bigfont($family: 'Muli', $size: 25px, $weight: 400) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  margin-bottom: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 1000px;
+}
+
+h1 { @include bigfont; }
+h2 { @include font('Muli', 25px, 400); }
+h3 {
+  @include font('Open Sans', 15px);
+}
+p {
+  font-size: 14px;
+  font-family: 'Roboto Light';
+}
+
+.row-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.content-box {
+  border: 0.5px solid rgba(0, 0, 255, 0.05);
+  border-radius: 10px;
+  padding: 25px;
+  background-color: rgba(252, 253, 255, 0.5);
+  -webkit-box-shadow: 4px 6px 13px -7px rgba(222,222,222,0.6);
+  -moz-box-shadow: 4px 6px 13px -7px rgba(222,222,222,0.6);
+  box-shadow: 4px 6px 10px -6px rgba(222,222,222,0.6);
+  overflow: hidden;
+}
+
+.description { width: 100%; }
+.languages { width: 39.5%; }
+.classes { width: 59.5%; }
+
+.education {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .school-entry {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    p {
+      font-size: 12px;
+      font-style: italic;
+    }
+  }
+}
+
+.skill-ratings {
+  list-style-type: none;
+  font-family: 'Open Sans';
+  font-size: 15px;
+  li {
+    width: 100%;
+    margin-top: 10px;
+    @include font('Open Sans Medium');
+  }
+  .bar-container {
+    margin: 5px 0px 5px 0px;
+    height: 10px;
+    background-color: rgba(39 ,92 ,178, 0.1);
+  }
+  .bar {
+    background-color: $color2;
+    height: 100%;
+  }
+  .java { width: 90%; }
+  .python { width: 90%; }
+  .cplusplus { width: 75%; }
+  .htmlcss { width: 80%; }
+}
+
+.classes-list {
+  list-style-type: none;
+  ul { width: 100%; }
+  li {
+    @include font('Open Sans', 15px);
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+  }
+}
+
+.footer {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    margin: 0px 7px;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+  }
+
+  a:hover {
+    opacity: 0.5;
+  }
+}

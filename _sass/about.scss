@@ -1,0 +1,50 @@
+.jumbotron {
+  padding: 0;
+  background-image: url('../images/speaking.jpg');
+  background-size: 101%;
+  background-position: 0% 30%;
+  height: 500px;
+  width: 101%;
+  opacity: 0.9;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  p {
+    font-size: 16px;
+    margin-top: 15px;
+    // letter-spacing: 0.5px;
+  }
+}
+
+.ornament {
+  width: 50px;
+  height: 2px;
+  background-color: $color2;
+}
+
+.picture-box {
+  width: 31%;
+  height: 500px;
+  overflow: hidden;
+  border: 0.5px solid rgba(0, 0, 255, 0.05);
+  border-radius: 10px;
+  background-color: rgba(252, 253, 255, 0.5);
+  -webkit-box-shadow: 4px 6px 13px -7px rgba(222,222,222,0.6);
+  -moz-box-shadow: 4px 6px 13px -7px rgba(222,222,222,0.6);
+  box-shadow: 4px 6px 10px -6px rgba(222,222,222,0.6);
+  //
+  // .crop {
+  //   height: 66%;
+  //   width: 100%;
+  //   background-color: rgba(252, 253, 255, 0.5);
+  //   border: 1px solid cyan;
+  //   position: relative;
+  //   bottom: 300px;
+  // }
+
+  img {
+    object-fit: cover;
+  }
+}
