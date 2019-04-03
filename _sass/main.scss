@@ -37,7 +37,7 @@ body {
 
 h1 { @include bigfont; }
 h2 { @include font('Muli', 25px, 400); }
-h3 { @include font('Open Sans', 15px); }
+h3 { @include font('Open Sans', 15px); margin-bottom: 5px; }
 p { @include font('Roboto', 14px, 300); }
 
 .row-container {
@@ -47,13 +47,13 @@ p { @include font('Roboto', 14px, 300); }
 }
 
 .content-box {
-  border: 0.5px solid rgba(0, 0, 0, 0.05);
+  // border: 0.5px solid rgba(0, 0, 255, 0.01);
   border-radius: 10px;
   padding: 25px;
-  background-color: white;
+  background-color: rgba(252, 253, 255, 0.1);
   -webkit-box-shadow: 4px 6px 13px -7px rgba(222,222,222,0.6);
   -moz-box-shadow: 4px 6px 13px -7px rgba(222,222,222,0.6);
-  box-shadow: 4px 6px 10px -6px rgba(222,222,222,0.6);
+  box-shadow: 4px 6px 25px -6px rgba(222,222,222,0.6);
   overflow: hidden;
 }
 
