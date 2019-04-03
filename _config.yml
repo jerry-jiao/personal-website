@@ -1,5 +1,13 @@
+title: Jerry Jiao
+email: jerryjiao@berkeley.edu
+description: >-
+  My name is Jerry, and I am an EECS major at UC Berkeley. This is my personal website, where you can
+  learn more about my education, abilities, and interests. Welcome!
+
 url: jerry-jiao.github.io
 baseurl: /
+github_username: jerry-jiao
+
 plugins:
   - jekyll-sitemap
   - jekyll-feed
