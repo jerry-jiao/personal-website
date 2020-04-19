@@ -8,7 +8,7 @@ showpic: true
   <div class="row-container">
     <div class="description content-box">
       <p>
-        Hey! I'm a student at UC Berkeley with interest in software engineering, product development, and entrepreneurship. In my free time,
+        Hey! I'm a sophomore at UC Berkeley with interest in software engineering, product development, and entrepreneurship. In my free time,
         I'm a passionate pianist, aloof stargazer, and avid learner of new things - jazz improv and solving a rubik's cube are next on my list!
       </p>
     </div>
@@ -19,13 +19,13 @@ showpic: true
     <div class="education content-box">
       <h2>Education</h2>
       <div class="school-entry">
-        <h3>University of California, Berkeley</h3>
-        <p>2018 - 2022</p>
+        <h4>University of California, Berkeley</h4>
+        <p class="smalltext">2018 - 2021 (Intended)</p>
       </div>
-      <p>Bachelor of Science in Electrical Engineering and Computer Science (EECS),  3.65 GPA</p>
+      <p>Bachelor of Science in Electrical Engineering and Computer Science (EECS),  3.64 GPA</p>
       <div class="school-entry">
-        <h3>Fraser Heights Secondary, BC, Canada</h3>
-        <p>2014 - 2018</p>
+        <h4>Fraser Heights Secondary, BC, Canada</h4>
+        <p class="smalltext">2014 - 2018</p>
       </div>
       <p>4.0 Unweighted GPA</p>
     </div>
@@ -46,7 +46,7 @@ showpic: true
         <h2>Coursework</h2>
         <ul class="classes-list">
           {% for item in site.data.classes %}
-          <li>{{ item.name }} <p>{{ item.description }}</p></li>
+          <li><h3>{{ item.name }}</h3><p>{{ item.description }}</p></li>
           {% endfor %}
         </ul>
       </div>
