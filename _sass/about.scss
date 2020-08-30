@@ -1,3 +1,94 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  p {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+  }
+  h1 {
+    margin-left: 10px
+  }
+}
+
+.paragraph-wrapper {
+  .decoration1 {
+    height: 100%;
+    width: 100%;
+    border: 1.5px solid $color2;
+    opacity: 0.2;
+    border-radius: 5px;
+    position: relative;
+    left: -10px;
+  }
+  .decoration2 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    top: -170px;
+    background-color: rgba(242, 251, 254, 0.4);
+  }
+}
+//
+// .ornament {
+//   margin-top: -5px;
+//   margin-bottom: 3px;
+//   width: 50px;
+//   height: 2px;
+//   background-color: $color2;
+// }
+
+.picture-box {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 310px;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: rgba(252, 253, 255, 0.5);
+  -webkit-box-shadow: 4px 6px 13px -7px rgba(222,222,222,0.6);
+  -moz-box-shadow: 4px 6px 13px -7px rgba(222,222,222,0.6);
+  box-shadow: 4px 6px 10px -6px rgba(222,222,222,0.6);
+
+  img {
+    object-fit: cover;
+    object-position: 0 0;
+  }
+  .speaking {
+    object-fit: cover;
+    object-position: 0 70%;
+  }
+  .picturefont {
+    color: white;
+    position: relative;
+    bottom: 65px;
+    margin: 20px;
+    // border: 1px solid black;
+  }
+  p {
+    line-height: 15px;
+  }
+  .smoltext {
+      margin-top: 10px;
+      font-style: italic;
+      font-size: 12px;
+  }
+
+  ul {
+    // border: 1px solid black;
+    list-style: none;
+    @include font('Open Sans', 15px);
+    position: relative;
+    bottom: 65px;
+    padding: 10px 30px;
+
+    h3 { color: $color1; margin: 0; }
+    li { margin: 5px; }
+  }
+}
+
+// OLD
 .jumbotron {
   padding: 0;
   background-image: url('../images/speaking.jpg');
@@ -6,45 +97,4 @@
   height: 500px;
   width: 101%;
   opacity: 0.9;
-}
-
-.about {
-  display: flex;
-  flex-direction: column;
-  p {
-    font-size: 16px;
-    margin-top: 15px;
-    // letter-spacing: 0.5px;
-  }
-}
-
-.ornament {
-  width: 50px;
-  height: 2px;
-  background-color: $color2;
-}
-
-.picture-box {
-  width: 31%;
-  height: 500px;
-  overflow: hidden;
-  border: 0.5px solid rgba(0, 0, 255, 0.05);
-  border-radius: 10px;
-  background-color: rgba(252, 253, 255, 0.5);
-  -webkit-box-shadow: 4px 6px 13px -7px rgba(222,222,222,0.6);
-  -moz-box-shadow: 4px 6px 13px -7px rgba(222,222,222,0.6);
-  box-shadow: 4px 6px 10px -6px rgba(222,222,222,0.6);
-  //
-  // .crop {
-  //   height: 66%;
-  //   width: 100%;
-  //   background-color: rgba(252, 253, 255, 0.5);
-  //   border: 1px solid cyan;
-  //   position: relative;
-  //   bottom: 300px;
-  // }
-
-  img {
-    object-fit: cover;
-  }
 }

@@ -1,5 +1,76 @@
 ---
 ---
+$color1: #275cb2;
+// $color2: #2599ce;
+$color2: #2f84ce;
+$colorbold: #1b559b;
+// $font-main: 'Roboto Light';
+// $font-secondary: 'Open Sans';
+
+@mixin font($family: sans-serif, $size: 15px, $weight: normal) {
+  font-family: $family, sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  font-style: normal;
+}
+
+@mixin bigfont($family: arial, $size: 25px, $weight: normal) {
+  font-family: $family, arial;
+  font-size: $size;
+  font-weight: $weight;
+  font-style: normal;
+  margin-bottom: 15px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; }
+html { display: flex; justify-content: center; }
+body { width: 1000px; }
+
+h1 { @include bigfont('Muli', 28px, 400); }
+h2 { @include font('Muli', 25px, 400); margin-bottom: 10px; }
+h3 { @include font('open sans', 15px, 400); margin-bottom: 5px; }
+h4 { @include font('roboto', 15px, 400); letter-spacing: 0.2px; margin-bottom: 5px; /*color: $colorbold; */ }
+.picturefont { @include font(program, 28px, 700); letter-spacing: 0.5px; }
+p { @include font('acumin-pro', 14px, 300); }
+.smalltext { font-size: 12px; font-style: italic; }
+
+.row-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.content-box {
+  // border: 0.5px solid rgba(0, 0, 255, 0.01);
+  border-radius: 10px;
+  padding: 25px;
+  background-color: rgba(252, 253, 255, 0.4);
+  -webkit-box-shadow: 4px 6px 13px -7px rgba(222,222,222,0.6);
+  -moz-box-shadow: 4px 6px 13px -7px rgba(222,222,222,0.6);
+  box-shadow: 4px 6px 25px -7px rgba(222,222,222,0.6);
+  overflow: hidden;
+}
+
+.footer {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    margin: 0px 7px;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+  }
+
+  a:hover {
+    opacity: 0.5;
+  }
+}
+
 @import 'main';
 @import 'nav';
 @import 'about';
+@import 'projects';
